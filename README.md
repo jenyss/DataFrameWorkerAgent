@@ -1,5 +1,5 @@
 # DataFrameWorkerAgent
-The DataFrame Worker Agent is a JupyterLab-based tool for processing free-text queries about DataFrames. It converts these queries into Python code to retrieve the requested information. Additionally, it uses Tavily as a tool to fetch detailed information related to the retrieved data.
+The DataFrame Worker Agent is a JupyterLab-based tool for processing free-text queries about DataFrames. It converts these queries into Python code to retrieve the requested information. Additionally, it uses Tavily as a tool to fetch detailed information related to the retrieved data. _**This last step can be done from the LangGraph framewor without the need to invoke an LLM and was implemented just to illustrate LLM tool calling.**_
 
 ## Agent Workflow
 
