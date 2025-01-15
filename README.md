@@ -8,7 +8,7 @@ The DataFrame Worker Agent is a JupyterLab-based tool for processing free-text q
 * Access to <b>JupyterLab, Google Colab</b>, or another interactive computing environment to run this Jupyter Notebook.
 * To run the notebook, ensure the following frameworks are installed: LangChain, LangGraph, Pandas, python-dotenv
 * [Tavily](https://www.tavily.com) is used as a tool invoked by the LLM to fetch additional data.
-* <b>Access to a Large Language Model API</b> for evaluating your product discovery prompts.
+* Access to a Large Language Model API.
 
 ### Step 1: Clone the Repository
 
