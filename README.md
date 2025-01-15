@@ -1,6 +1,24 @@
 # DataFrameWorkerAgent
 The DataFrame Worker Agent is a JupyterLab-based tool for processing free-text queries about DataFrames. It converts these queries into Python code to retrieve the requested information. Additionally, it uses Tavily as a tool to fetch detailed information related to the retrieved data.
 
+## Agent Workflow
+
+1. <b>Input Node:</b> Converts free-text user input into a DataFrame query using an LLM.
+
+  Input: "task"
+  Output: "query"
+
+2. <b>Execution Node:</b> Runs the query on a DataFrame loaded from an Excel sheet and formats the output.
+
+  Input: "query"
+  Output: "result"
+  
+3. <b>Get Company Data Node:</b> Takes the formatted "result" and passes it to an LLM. The LLM extracts specified data (in this case: a list of company tickers) and iterates over them, calling a tool (Tavily) to fetch recent company information for each ticker. Outputs the aggregated result from all iterations in a structured format.
+
+  Input: "result"
+  Output: "company_info"
+
+
 ## Intallation
 
 <b>Prerequisites</b>
