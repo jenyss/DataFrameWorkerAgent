@@ -18,7 +18,7 @@ The DataFrame Worker Agent is a JupyterLab-based tool for processing free-text q
    - **Input:** `"result"`
    - **Output:** `"company_info"`
   
-_**You can easily disconnect or customize this node to suit your specific needs.**_
+   _**You can easily disconnect or customize this node to suit your specific needs.**_
 
 ## Intallation
 
