@@ -1,5 +1,5 @@
 # DataFrameWorkerAgent
-The DataFrame Worker Agent is a JupyterLab-based tool for processing free-text queries about DataFrames. It converts these queries into Python code to retrieve the requested information. Additionally, it uses Tavily as a tool to fetch detailed information related to the retrieved data. _**This last step can be done from the LangGraph framework without invoking an LLM and was implemented just to illustrate one possible implementation of LLM tool calling.**_
+This DataFrame Worker Agent lets you query Excel files. It loads spreadsheets into a DataFrame and translates user question into Pandas query to extract the requested information. Additionally, it integrates Tavily to fetch detailed information related to the results. _**This last step can be done from the LangGraph framework without invoking an LLM and was implemented just to illustrate one possible implementation of LLM tool calling.**_
 
 If you need an Agent that works efficiently with Excel sheets and answers questions related to your data then the [ExcelWorkerReActAgent](https://github.com/jenyss/ExcelWorkerReActAgent) is a much better choice.
 
@@ -7,7 +7,7 @@ If you need an Agent that works efficiently with Excel sheets and answers questi
 
 ## Agent Workflow
 
-1. **Input Node:** Converts free-text user input into a DataFrame query using an LLM.
+1. **Input Node:** Converts free-text user input into a Pandas query using an LLM.
 
    - **Input:** `"task"`
    - **Output:** `"query"`
