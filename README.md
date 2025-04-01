@@ -2,6 +2,7 @@
 This DataFrame Worker Agent lets you query Excel files. It loads spreadsheets into a DataFrame and translates user question into Pandas query to extract the requested information. Additionally, it integrates Tavily to fetch detailed information related to the results. _**This last step can be done from the LangGraph framework without invoking an LLM and was implemented just to illustrate one possible implementation of LLM tool calling.**_
 
 If you need an Agent that works efficiently with Excel sheets and answers questions related to your data then the [ExcelWorkerReActAgent](https://github.com/jenyss/ExcelWorkerReActAgent) is a much better choice.
+Or you can have fun with the [langgraph-codeact-excel-worker](https://github.com/jenyss/langgraph-codeact-excel-worker) agent.
 
 **If you have any questions or would like to collaborate, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/jenya-stoeva-60477249/). You're more than welcome!**
 
